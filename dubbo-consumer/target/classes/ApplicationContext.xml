@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:configurator="http://cocoon.apache.org/schema/configurator"
+       xmlns:avalon="http://cocoon.apache.org/schema/avalon"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+                           http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd
+                           http://cocoon.apache.org/schema/configurator http://cocoon.apache.org/schema/configurator/cocoon-configurator-1.0.1.xsd
+                           http://code.alibabatech.com/schema/dubbo
+                           http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+                           http://cocoon.apache.org/schema/avalon http://cocoon.apache.org/schema/avalon/cocoon-avalon-1.0.xsd"
+       default-lazy-init="false">
+
+    <dubbo:application name="dubbo_consumer"/>
+    <!--使用zookeeper注册中心暴露服务地址 -->
+    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
+
+    <!--<dubbo:protocol name="dubbo" port="20880" />-->
+    <!--&lt;!&ndash;要引用的服务 &ndash;&gt;-->
+    <dubbo:reference interface="com.wulang.Hello" id="springservice"/>
+    <!--<dubbo:annotation package="com.wulang"/>-->
+</beans>
