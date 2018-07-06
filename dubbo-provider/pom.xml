@@ -5,7 +5,7 @@
     <parent>
         <artifactId>dubbo-learning</artifactId>
         <groupId>com.wulang</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -31,12 +31,18 @@
         <dependency>
             <groupId>com.wulang</groupId>
             <artifactId>dubbo-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0</version>
         </dependency>
         <dependency>
-            <groupId>com.wulang</groupId>
-            <artifactId>dubbo-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-config-api</artifactId>
+            <version>2.7.0-SNAPSHOT</version>
+        </dependency>
+        <!--dubbo所有-->
+        <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>dubbo</artifactId>
+        <version>2.5.3</version>
         </dependency>
     </dependencies>
 

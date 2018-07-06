@@ -1,0 +1,3 @@
+com\wulang\test\AnnotationTest.class
+com\wulang\entity\User.class
+com\wulang\annotation\Table.class
