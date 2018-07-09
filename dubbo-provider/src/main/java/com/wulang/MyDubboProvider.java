@@ -21,8 +21,10 @@ public class MyDubboProvider {
 //        registry.setPassword("bbb");
 
 // 服务提供者协议配置
-//        ProtocolConfig protocol = new ProtocolConfig();
-//        protocol.setName("zookeeper");
+        ProtocolConfig protocol = new ProtocolConfig();
+        protocol.setName("dubbo");
+        protocol.setPort(12345);
+        protocol.setThreads(200);
 
 // 注意：ServiceConfig为重对象，内部封装了与注册中心的连接，以及开启服务端口
 
@@ -30,7 +32,7 @@ public class MyDubboProvider {
         ServiceConfig<Hello> service = new ServiceConfig<>(); // 此实例很重，封装了与注册中心的连接，请自行缓存，否则可能造成内存和连接泄漏
         service.setApplication(application);
         service.setRegistry(registry); // 多个注册中心可以用setRegistries()
-//        service.setProtocol(protocol); // 多个协议可以用setProtocols()
+        service.setProtocol(protocol); // 多个协议可以用setProtocols()
         service.setInterface(Hello.class);
         Hello hi=new HelloImpl();
         service.setRef(hi);
@@ -38,6 +40,7 @@ public class MyDubboProvider {
 
 // 暴露及注册服务
         service.export();
+        while (true){}
     }
 }
 
