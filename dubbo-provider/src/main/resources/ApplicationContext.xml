@@ -11,7 +11,7 @@
                            http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd
                            http://cocoon.apache.org/schema/configurator http://cocoon.apache.org/schema/configurator/cocoon-configurator-1.0.1.xsd
                            http://code.alibabatech.com/schema/dubbo
-                           http://code.alibabatech.com/schema/dubbo.xsd
+                           http://code.alibabatech.com/schema/dubbo/dubbo.xsd
                            http://cocoon.apache.org/schema/avalon http://cocoon.apache.org/schema/avalon/cocoon-avalon-1.0.xsd"
        default-lazy-init="false">
 
