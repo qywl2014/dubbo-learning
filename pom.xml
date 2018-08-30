@@ -13,6 +13,7 @@
     <module>dubbo-provider</module>
     <module>dubbo-consumer</module>
     <module>annotation-learning</module>
+      <module>rmi-learning</module>
   </modules>
   <name>dubbo-learning</name>
   <!-- FIXME change it to the project's website -->

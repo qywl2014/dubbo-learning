@@ -1,0 +1,4 @@
+com\wulang\api\UserService.class
+com\wulang\remote\UserServiceImpl.class
+com\wulang\local\main\LocalApplication.class
+com\wulang\remote\main\RemoteApplication.class

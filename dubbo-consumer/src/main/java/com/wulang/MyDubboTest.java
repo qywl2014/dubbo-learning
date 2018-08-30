@@ -15,7 +15,7 @@ public class MyDubboTest {
         referenceConfig.setRegistry(registryConfig);
         referenceConfig.setInterface(Hello.class);
         Hello hello=referenceConfig.get();
-        System.out.println(hello.Hi());
+        System.out.println(hello.Hi(1));
     }
 }
 

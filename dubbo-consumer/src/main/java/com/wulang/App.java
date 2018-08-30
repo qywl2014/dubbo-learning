@@ -17,7 +17,7 @@ public class App
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext(
                 new String[] { "classpath*:applicationContext.xml" });
         Hello h= (Hello)applicationContext.getBean("springservice");
-        String str=h.Hi();
+        String str=h.Hi(1);
         System.out.println(str);
     }
 }
