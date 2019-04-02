@@ -6,4 +6,8 @@ public class HelloImpl implements Hello{
         System.out.println("hello node");
         return "I am provider";
     }
+
+    @Override
+    public void eat(){}
 }
+
